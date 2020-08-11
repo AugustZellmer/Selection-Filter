@@ -9,4 +9,4 @@ If you have any questions, please email me at august.zellmer@gmail.com, mentioni
 ## Privacy Policy
 Selection Filter will not and cannot collect any data from your spreadsheets. 
 
-I (August Zellmer) am provided with basic information about when Selection Filter is used - information like number of downloads and approximate frequency of use. I am not provided with **any** information regarding how it is used.
+I (August Zellmer) am provided with basic information about when Selection Filter is used - information like number of downloads and approximate frequency of use. I am not provided with any information regarding how it is used.
