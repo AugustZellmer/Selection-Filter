@@ -203,6 +203,9 @@ function filterRows(values){
 function hideAllColumns(ranges){
   for(const range of ranges){
     for(colNum = 1; colNum <= range.getNumColumns(); colNum++){
+      if(colNum === range.getSheet().getMaxColumns()){
+       continue; 
+      }
       const cell = range.getCell(1, colNum);
       cell.getSheet().hideColumn(cell);
     }
@@ -215,6 +218,9 @@ function hideAllColumns(ranges){
 function hideAllRows(ranges){
   for(const range of ranges){
     for(rowNum = 1; rowNum <= range.getNumRows(); rowNum++){
+      if(rowNum === range.getSheet().getMaxRows()){
+       continue; 
+      }
       const cell = range.getCell(rowNum, 1);
       cell.getSheet().hideRow(cell);
     }
