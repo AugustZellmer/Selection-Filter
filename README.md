@@ -7,6 +7,7 @@ Google Sheets already has the functionality to filter data. However, this plugin
 If you have any questions, please email me at august.zellmer@gmail.com, mentioning Selection Filter in the subject line.
 
 ## Privacy Policy
-Selection Filter will not and cannot collect any data from your spreadsheets. 
+Selection Filter must be granted permission to read that data on your spreadsheets. This data read is only used to help you setup filters on your spreadsheets; Selection Filter will not upload your data to any additional servers (besides the Google servers which it is already stored on), nor will Selection Filter share your data with anyone.
+Selection Fitler must also be granted permission to hide the rows/columns on your spreadsheet. Hiding these rows/columns is how Selection Filter will filter your data. Selection Filter will not edit any of the cells on your spreadsheets. 
 
-I (August Zellmer) am provided with basic information about when Selection Filter is used - information like number of downloads and approximate frequency of use. I am not provided with any information regarding how it is used.
+I (August Zellmer) am provided with basic information about when Selection Filter is used - information like number of downloads and approximate frequency of use. I may share this usage data with others (i.e. friends, potential employers, etc.). I will not sell this usage data. 
