@@ -157,7 +157,7 @@ function filterColumns(values){
   if(rangeList === null){
     SpreadsheetApp.getUi().alert("No range selected. I didn't think this was possible.");
   }
-  const ranges = rangeList.getRanges();
+  const ranges = rangeList.getRanges()
   hideAllColumns(ranges);
   for(const range of ranges){
     for(colNum = 1; colNum <= range.getNumColumns(); colNum++){
@@ -206,8 +206,7 @@ function hideAllColumns(ranges){
       if(colNum === range.getSheet().getMaxColumns()){
        continue; 
       }
-      const cell = range.getCell(1, colNum);
-      cell.getSheet().hideColumn(cell);
+      range.getSheet().hideColumns(colNum);
     }
   }
 }
@@ -221,8 +220,7 @@ function hideAllRows(ranges){
       if(rowNum === range.getSheet().getMaxRows()){
        continue; 
       }
-      const cell = range.getCell(rowNum, 1);
-      cell.getSheet().hideRow(cell);
+      range.getSheet().hideRows(rowNum);
     }
   }
 }
