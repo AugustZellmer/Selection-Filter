@@ -10,4 +10,4 @@ Selection Fitler must also be granted permission to hide the rows/columns on you
 I (August Zellmer) am provided with basic information about how frequently Selection Filter is used. I may share this usage data with others (i.e. friends, potential employers, etc.). I will not sell this usage data. 
 
 ## Support
-If you have any questions, please email me at august.zellmer+selectionfilter@gmail.com, mentioning Selection Filter in the subject line.
+If you have any questions, please email me at august.zellmer+selectionfilter@gmail.com.
