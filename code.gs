@@ -4,18 +4,21 @@ const COLUMN_DIR = "column";
 
 
 function onInstall(){
-  onOpen();
+  /*
+   * If a user installs an AddOn while a file is already opened, onOpen is not triggered for that file 
+   * (until they re-open it), but onInstall is, so we call onOpen from onInstall.
+   */
+  onOpen(); 
 }
 
 function onOpen() {
   const ui = SpreadsheetApp.getUi();
-  ui.createAddonMenu()
-    .addItem('Filter Out Rows', 'mainProcedureRows')
-    .addItem('Filter Out Columns', 'mainProcedureColumns')
-    .addItem('Clear Filters', 'unhideAll')
-    .addToUi();
+    ui.createAddonMenu()
+      .addItem('Filter Out Rows', 'mainProcedureRows')
+      .addItem('Filter Out Columns', 'mainProcedureColumns')
+      .addItem('Clear Filters', 'unhideAll')
+      .addToUi();
 }
-
 
 
 
@@ -41,7 +44,6 @@ function mainProcedureColumns(){
   PropertiesService.getScriptProperties().setProperty(DIR_KEY, COLUMN_DIR);
   openPopup();
 }
-
 
 
 
